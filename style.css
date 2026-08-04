@@ -1,33 +1,280 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+/* =========================
+   Roustor - Style principal
+   ========================= */
+
+
+* {
+    box-sizing: border-box;
 }
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   En-tête
+   ========================= */
+
 
 header {
-    background-color: #1f4e79;
+
+    background:
+        linear-gradient(
+            135deg,
+            #17365d,
+            #2f75b5
+        );
+
     color: white;
-    padding: 40px;
+
     text-align: center;
+
+    padding: 70px 20px;
+
 }
+
+
+
+header h1 {
+
+    font-size: 56px;
+
+    margin: 0 0 15px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+header h2 {
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    margin: 10px 0 25px;
+
+}
+
+
+
+header p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+}
+
+
+
+
+
+/* =========================
+   Contenu principal
+   ========================= */
+
 
 main {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-    background: white;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
 }
 
-h1 {
-    font-size: 48px;
-}
 
-h2 {
-    color: #1f4e79;
-}
 
 section {
-    margin-bottom: 40px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+
+section h2 {
+
+    margin-top: 0;
+
+    color: #17365d;
+
+    font-size: 28px;
+
+}
+
+
+
+
+
+/* =========================
+   Listes fonctionnalités
+   ========================= */
+
+
+ul {
+
+    padding-left: 20px;
+
+}
+
+
+li {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* =========================
+   Mise en avant du schéma
+   ========================= */
+
+
+section div {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+
+section div p {
+
+    display: inline-block;
+
+    background: #eef5fb;
+
+    padding: 25px 45px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+}
+
+
+
+
+
+/* =========================
+   Liens
+   ========================= */
+
+
+a {
+
+    color: #2f75b5;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* =========================
+   Pied de page
+   ========================= */
+
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #17365d;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+
+
+
+/* =========================
+   Adaptation mobile
+   ========================= */
+
+
+@media screen and (max-width: 700px) {
+
+
+    header h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    header h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    header p {
+
+        font-size: 17px;
+
+    }
+
+
+    section {
+
+        padding: 25px;
+
+    }
+
+
 }
