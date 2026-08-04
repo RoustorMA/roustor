@@ -278,3 +278,29 @@ footer {
 
 
 }
+
+nav {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: white;
+
+}
+
+
+nav a {
+
+    margin: 0 10px;
+
+    color: #17365d;
+
+}
+
+
+nav a:hover {
+
+    color: #2f75b5;
+
+}
