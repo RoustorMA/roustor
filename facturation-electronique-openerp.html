@@ -5,16 +5,15 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>
-        Facturation électronique OpenERP | Roustor
+        Facturation électronique avec OpenERP | Roustor
     </title>
 
-
     <meta name="description"
-    content="Découvrez comment préparer votre OpenERP à la facturation électronique avec Roustor : Factur-X, PDF/A-3 et conformité EN16931.">
-
+          content="Roustor permet aux entreprises utilisant OpenERP de conserver leur environnement de facturation tout en ajoutant la facturation électronique. Intégration avec PostgreSQL, génération Factur-X, contrôle, transmission et suivi des factures.">
 
     <link rel="stylesheet" href="style.css">
 
@@ -23,50 +22,65 @@
 
 <body>
 
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
 <nav>
 
-    <a href="index.html">
-        Accueil
-    </a>
+    <div class="nav-container">
 
-    |
+        <a class="logo" href="index.html">
+            ROUSTOR
+        </a>
 
-    <a href="facturation-electronique-openerp.html">
-        Facturation électronique OpenERP
-    </a>
+        <div class="nav-links">
 
-    |
+            <a href="index.html">
+                Accueil
+            </a>
 
-    <a href="factur-x-openerp.html">
-        Factur-X OpenERP
-    </a>
+            <a href="en-pratique.html">
+                En pratique
+            </a>
 
-    |
+            <a href="contact.html">
+                Contact
+            </a>
 
-    <a href="pdp-facturation-electronique-openerp.html">
-        PDP OpenERP
-    </a>
+        </div>
 
-    <a href="superpdp-openerp.html">
-        SuperPDP OpenERP
-    </a>
+    </div>
 
 </nav>
-    
-<header>
 
-    <h1>
-        Facturation électronique OpenERP
-    </h1>
 
-    <h2>
-        Faites évoluer votre OpenERP sans remplacer votre ERP
-    </h2>
 
-    <p>
-        Roustor apporte une solution de connexion entre OpenERP
-        et les nouveaux standards de facturation électronique.
-    </p>
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Facturation électronique avec OpenERP
+        </h1>
+
+        <p class="hero-subtitle">
+            Conserver son OpenERP et lui ajouter
+            la facturation électronique.
+        </p>
+
+        <p>
+            Roustor s'intègre à l'environnement existant
+            de l'entreprise et prend en charge les opérations
+            nécessaires à la facturation électronique.
+        </p>
+
+    </div>
 
 </header>
 
@@ -75,198 +89,263 @@
 <main>
 
 
+<!-- =========================================================
+     INTEGRATION OPEN ERP
+     ========================================================= -->
+
 <section>
 
-<h2>
-Pourquoi adapter OpenERP à la facturation électronique ?
-</h2>
+    <h2>
+        Une intégration à votre environnement existant
+    </h2>
 
+    <p>
+        Lorsqu'un logiciel de facturation est utilisé depuis
+        plusieurs années, il contient les données et les
+        habitudes de travail de l'entreprise.
+    </p>
 
-<p>
-OpenERP est encore utilisé par de nombreuses entreprises
-pour gérer leurs ventes, leurs achats et leur comptabilité.
-</p>
+    <p>
+        Roustor a été conçu pour compléter cet environnement
+        plutôt que pour le remplacer.
+    </p>
 
+    <p>
+        Dans le cas d'OpenERP, l'intégration est déjà prévue
+        et opérationnelle. Roustor récupère les informations
+        nécessaires directement depuis la base PostgreSQL
+        utilisée par l'ERP.
+    </p>
 
-<p>
-La réforme de la facturation électronique impose cependant
-de nouveaux formats d'échange et de nouvelles obligations.
-</p>
-
-
-<p>
-L'objectif n'est pas nécessairement de remplacer un ERP
-fonctionnel, mais de lui apporter les capacités nécessaires.
-</p>
-
+    <p>
+        Roustor fonctionne actuellement comme une application
+        Windows installée dans l'environnement de l'entreprise.
+    </p>
 
 </section>
 
 
 
-<section>
-
-
-<h2>
-Roustor, une passerelle entre OpenERP et la facture électronique
-</h2>
-
-
-<p>
-Roustor récupère les données de facturation issues d'OpenERP
-et permet de générer des documents électroniques conformes.
-</p>
-
-
-<p>
-
-<strong>OpenERP</strong>
-
-<br>
-
-↓
-
-<br>
-
-<strong>Roustor</strong>
-
-<br>
-
-↓
-
-<br>
-
-<strong>Factur-X / PDF-A3 / EN16931</strong>
-
-</p>
-
-
-</section>
-
-
-
+<!-- =========================================================
+     CE QUE ROUSTOR AJOUTE
+     ========================================================= -->
 
 <section>
 
+    <h2>
+        Ce que Roustor ajoute à OpenERP
+    </h2>
 
-<h2>
-Les formats de facturation électronique
-</h2>
+    <p>
+        OpenERP continue de gérer les clients, les produits
+        et les factures. Roustor prend en charge les opérations
+        complémentaires liées à leur traitement électronique.
+    </p>
 
+    <div class="feature-grid">
 
-<p>
-Roustor s'appuie sur les standards utilisés dans la réforme
-de la facturation électronique.
-</p>
+        <div class="feature-card">
 
+            <h3>
+                Factur-X
+            </h3>
 
-<ul>
+            <p>
+                Roustor génère la facture électronique au format
+                Factur-X à partir des données issues d'OpenERP.
+            </p>
 
-<li>
-<strong>Factur-X</strong> :
-facture hybride associant un PDF lisible et un fichier XML structuré.
-</li>
-
-
-<li>
-<strong>EN16931</strong> :
-modèle européen définissant les règles de la facture électronique.
-</li>
-
-
-<li>
-<strong>PDF/A-3</strong> :
-format permettant l'association du PDF et des données XML.
-</li>
-
-</ul>
+        </div>
 
 
-</section>
+        <div class="feature-card">
+
+            <h3>
+                Contrôle
+            </h3>
+
+            <p>
+                Les factures sont contrôlées avant leur transmission
+                afin de détecter les éventuelles erreurs.
+            </p>
+
+        </div>
 
 
+        <div class="feature-card">
+
+            <h3>
+                Transmission
+            </h3>
+
+            <p>
+                Les factures validées sont transmises à une
+                plateforme agréée partenaire.
+            </p>
+
+        </div>
 
 
-<section>
+        <div class="feature-card">
 
+            <h3>
+                Suivi et envoi
+            </h3>
 
-<h2>
-Une solution pensée pour les utilisateurs OpenERP
-</h2>
+            <p>
+                Roustor conserve l'état des factures et prépare
+                également le mail destiné au client avec la facture
+                en pièce jointe.
+            </p>
 
+        </div>
 
-<p>
-Roustor est conçu pour les entreprises souhaitant conserver
-leur environnement OpenERP tout en préparant leur transition
-vers la facturation électronique.
-</p>
-
+    </div>
 
 </section>
 
 
 
 
-<section>
 
+<!-- =========================================================
+     CAS LMPC
+     ========================================================= -->
 
-<h2>
-Vous êtes intégrateur OpenERP ?
-</h2>
+<section class="cta">
 
+    <h2>
+        Le cas de la LMPC
+    </h2>
 
-<p>
-Roustor peut compléter vos projets d'évolution OpenERP
-en apportant une brique dédiée à la facturation électronique.
-</p>
+    <p>
+        La LMPC utilise OpenERP depuis plus de dix ans pour
+        gérer son activité et sa facturation.
+    </p>
 
+    <p>
+        OpenERP répond toujours à ses besoins. Roustor a donc
+        été développé pour permettre à la LMPC de conserver
+        son environnement existant tout en ajoutant les
+        fonctions nécessaires à la facturation électronique.
+    </p>
 
-</section>
+    <p class="center">
 
+        <a
+            href="en-pratique.html"
+            class="button button-primary">
 
+            Voir Roustor en pratique
 
+        </a>
 
-<section>
-
-
-<h2>
-Contact
-</h2>
-
-
-<p>
-Pour échanger sur un projet OpenERP et facturation électronique :
-</p>
-
-
-<p>
-
-<a href="mailto:marcantoine_bb@yahoo.fr">
-marcantoine_bb@yahoo.fr
-</a>
-
-</p>
-
+    </p>
 
 </section>
-
 
 
 </main>
 
 
 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
 <footer>
 
-<p>
-© Roustor - Facturation électronique OpenERP
-</p>
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>
+                ROUSTOR
+            </h3>
+
+            <p>
+                Facturation électronique :
+                gardez votre logiciel de facturation.
+            </p>
+
+            <p>
+                Une solution pour faire évoluer votre
+                environnement existant.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Navigation
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="en-pratique.html">
+                        En pratique
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Informations techniques
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="facturation-electronique-openerp.html">
+                        Facturation électronique et OpenERP
+                    </a>
+                </li>
+
+                <li>
+                    <a href="superpdp-openerp.html">
+                        SuperPDP
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © Roustor — Facturation électronique
+        </p>
+
+    </div>
 
 </footer>
 
 
-
 </body>
-
 
 </html>

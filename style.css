@@ -313,6 +313,38 @@ section h3 {
 
 
 /* =========================================================
+   CAPTURE D'ÉCRAN
+   ========================================================= */
+
+.screenshot {
+    width: 100%;
+
+    margin: 35px auto 10px;
+
+    text-align: center;
+}
+
+.screenshot img {
+    display: block;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border: 1px solid #dfe5ea;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.12);
+}
+
+
+/* =========================================================
    ALIGNEMENT
    ========================================================= */
 
@@ -336,6 +368,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 
 /* =========================================================
    FOOTER
@@ -550,7 +583,16 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .screenshot {
+        margin-top: 25px;
+    }
+
+    .screenshot img {
+        max-width: 100%;
+    }
+
 }
+
 
 /* =========================================================
    TABLEAU DE COMPARAISON
@@ -590,4 +632,120 @@ footer {
 
 .comparison-table tr:hover {
     background: #eef5fb;
+}
+
+
+/* =========================================================
+   FORMULAIRE DE CONTACT
+   ========================================================= */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-intro {
+    margin-bottom: 30px;
+}
+
+.contact-form-container {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #17365d;
+
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d5dce3;
+
+    border-radius: 6px;
+
+    background: #fff;
+
+    color: #333;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #2f75b5;
+
+    box-shadow:
+        0 0 0 3px rgba(47,117,181,0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5af;
+}
+
+.form-submit {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.contact-email {
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORMULAIRE MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 750px) {
+
+    .contact-form-container {
+        max-width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
 }
